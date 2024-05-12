@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Cliente - Web App de Distribución de Alimentos</title>
+    <link rel="stylesheet" href="../CSS/index_cliente.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Distribuidora de alimentos del Mañana S.A</h1>
+        <h2>Alimentos 100% ecológicos</h2>
+        <div class="login-container">
+            <h2>Iniciar Sesión - Cliente</h2>
+            <form id="loginForm">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+                <p id="loginMessage"></p> <!-- Aquí se mostrará un mensaje de error si el inicio de sesión falla -->
+            </form>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="productos_clientes.html">Productos</a></li>
+            <li><a href="detallePedidos.html">Detalle de Pedidos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="../PaginasAdministrador/Login_admin.html">Administrador</a></li> <!-- Nuevo enlace para el inicio de sesión del administrador -->
+           
+        </ul>
+    </div>
+    <img src="../Imagenes/imagen3.jpg" alt="Logo de la empresa" class="background-image">
+
+<!-- Menú inferior -->
+    <div class="footer">
+        <p>Distribuidora de alimentos del Mañana S.A</p>
+        <p>Dirección: 123 Calle Principal, Ciudad de talca</p>
+        <p>Teléfono: +56995854231</p>
+        <p>Horario de Atención: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <p>Email: info@example.com</p>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </div>
