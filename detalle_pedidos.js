@@ -39,7 +39,7 @@
         localStorage.setItem('carrito', JSON.stringify(carritoTemp));
 
         // Redirigir a la página de "Productos Clientes"
-        window.location.href = 'productos_clientes.html';
+        window.location.href = 'Productos_clientes.html';
     });
 
     // Función para vaciar el carrito temporal
