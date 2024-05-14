@@ -44,7 +44,7 @@ verCarritoBtn.addEventListener('click', function() {
     localStorage.setItem('carritoTemp', JSON.stringify(carrito));
 
     // Redirigir a la página de "Detalle de Pedidos"
-    window.location.href = 'Detallepedidos.html';
+    window.location.href = 'DetallePedidos.html';
 });
 
 // Función para vaciar el carrito
