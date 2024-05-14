@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Web App de Distribución de Alimentos</title>
+    <link rel="stylesheet" href="../CSS/productos_clientes.css">
+</head>
+<body>
+<div class="header">
+    <h1>Distribuidora de Alimentos del Mañana S.A</h1>
+</div>
+
+<div class="login-container">
+    <!-- Contenido del inicio de sesión del cliente -->
+</div>
+
+<div class="menu">
+    <ul>
+        <li><a href="index_cliente.html">Inicio</a></li>
+        <li><a href="detallePedidos.html">Detalle de Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</div>
+
+<div class="productos-container">
+    <h2 class="productos-titulo">Nuestros Productos</h2>
+    <div class="producto">
+        <img src="../Imagenes/pollo-entero_1.jpg" alt="Producto 1">
+        <h3>Pollo Entero de Campo</h3>
+        <p>Descripción del Producto 1...</p>
+        <p>Precio: $10.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Pollo Entero de Campo" data-precio="10.99">Agregar al Carrito</button>
+    </div>
+    <div class="producto">
+        <img src="../Imagenes/Huevos.jpg" alt="Producto 2">
+        <h3>Huevos de Campo</h3>
+        <p>Descripción del Producto 2...</p>
+        <p>Precio: $5.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Huevos de Campo" data-precio="5.99">Agregar al Carrito</button>
+    </div>
+    <div class="producto">
+        <img src="../Imagenes/tomate.jpg" alt="Producto 3">
+        <h3>Tomates de Campo</h3>
+        <p>Descripción del Producto 3...</p>
+        <p>Precio: $2.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Tomates de Campo" data-precio="2.99">Agregar al Carrito</button>
+    </div>
+    <div class="producto">
+        <img src="../Imagenes/uvas.jpeg" alt="Producto 4">
+        <h3>Uvas de Campo</h3>
+        <p>Descripción del Producto 4...</p>
+        <p>Precio: $7.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Uvas de Campo" data-precio="7.99">Agregar al Carrito</button>
+    </div>
+      <div class="producto">
+        <img src="../Imagenes/CarneDeRes.jpg" alt="Producto 5">
+        <h3>Carne de res</h3>
+        <p>Descripción del Producto 5...</p>
+        <p>Precio: $2.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Carne de res" data-precio="2.99">Agregar al Carrito</button>
+    </div>
+    <div class="producto">
+        <img src="../Imagenes/ChocloPastelero.jpg" alt="Producto 6">
+        <h3>Choclo Pastelero</h3>
+        <p>Descripción del Producto 6...</p>
+        <p>Precio: $7.99</p> <!-- Aquí se muestra el precio -->
+        <button class="agregar-carrito" data-producto="Choclo Pastelero" data-precio="7.99">Agregar al Carrito</button>
+    </div>
+    <!-- Agrega más productos aquí -->
+</div>
+
+<div class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul class="lista-productos">
+        <!-- Los productos seleccionados se agregarán aquí -->
+    </ul>
+    <p>Total: <span class="total">0.00</span> CLP</p>
+    <button id="ver-carrito">Ver Carrito de Compras</button>
+    <button class="vaciar-carrito">Vaciar Carrito</button>
+</div>
+   
+
+
+<!-- Menú inferior -->
+    <div class="footer">
+        <p>Distribuidora de alimentos del Mañana S.A</p>
+        <p>Dirección: 123 Calle Principal, Ciudad de talca</p>
+        <p>Teléfono: +56995854231</p>
+        <p>Horario de Atención: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <p>Email: info@example.com</p>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </div>
+<script src="../JS/productos_clientes.js"></script>
+</body>
+</html>

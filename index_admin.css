@@ -1,0 +1,95 @@
+/* Estilos generales */
+/* Estilos para la imagen de fondo */
+/* Estilos para la imagen de fondo */
+.background-image {
+    position: absolute;
+    top: 100px; /* Ajusta según la altura de tu menú */
+    left: 0;
+    width: 100%; /* Estirar la imagen para cubrir todo el ancho */
+    height: 90%; /* Mantener la proporción de aspecto */
+    z-index: -1; /* Coloca la imagen detrás de otros elementos */
+}
+.header h1 {
+    font-size: 36px; /* Tamaño de letra grande */
+    font-style: italic; /* Estilo de letra cursiva */
+}
+
+.header h2 {
+    font-size: 24px; /* Tamaño de letra grande */
+    font-style: italic; /* Estilo de letra cursiva */
+}
+
+
+/* Estilos para el menú */
+.menu {
+    position: relative; /* Establece un contexto de posicionamiento para la imagen */
+    z-index: 1; /* Asegura que el menú esté sobre la imagen de fondo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+     background-color: #006262;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.menu {
+    background-color: #00ffff;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #0096d2;
+}
+
+/* Estilos para el footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006262;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+

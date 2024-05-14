@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App de Distribución de Alimentos</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+</head>
+<body>
+      <h1>Productos</h1>
+    <div id="productosContainer"></div>
+      <div class="contenido">
+        <h1>Bienvenido a la Web App de Distribución de Alimentos</h1>
+        <!-- Aquí puedes agregar contenido adicional de la página principal -->
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index_admin.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="detallePedidos.html">Detalle de Pedidos</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+        </ul>
+    </div>
+ <h1>Formulario de Productos</h1>
+    <form id="formularioProductos">
+        <label for="idProducto">ID Producto:</label><br>
+        <input type="text" id="idProducto" name="idProducto" required><br>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion"></textarea><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" id="precio" name="precio" min="0" step="0.01" required><br>
+
+        <label for="stock">Stock:</label><br>
+        <input type="number" id="stock" name="stock" min="0" required><br>
+
+        <button type="submit">Guardar Producto</button>
+    </form>
+ <div id="mensaje"></div>
+
+    <script src="productos.js"></script>
+</body>
+</html>

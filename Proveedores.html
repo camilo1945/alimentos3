@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App de Distribución de Alimentos - Proveedores</title>
+    <link rel="stylesheet" href="../CSS/proveedores.css">
+</head>
+<body>
+    <div class="contenido">
+        <h1>Bienvenido a la Web App de Distribución de Alimentos</h1>
+        <!-- Aquí puedes agregar contenido adicional de la página principal -->
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index_admin.html">Inicio</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+        </ul>
+    </div>
+
+   <div class="proveedores">
+    <h2>Lista de Proveedores</h2>
+    <table id="proveedores-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="proveedores-body"></tbody>
+    </table>
+</div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('http://localhost:3000/proveedor') // Hacer una solicitud al servidor para obtener los proveedores
+                .then(response => response.json())
+                .then(data => {
+                    // Manipular los datos recibidos y actualizar la página según sea necesario
+                    console.log('Datos de proveedores recibidos:', data);
+                })
+                .catch(error => {
+                    console.error('Error al obtener los proveedores:', error);
+                });
+        });
+    </script>
+
+    <!-- Menú inferior -->
+    <div class="footer">
+        <p>Distribuidora de alimentos del Mañana S.A</p>
+        <p>Dirección: 123 Calle Principal, Ciudad de Talca</p>
+        <p>Teléfono: +56995854231</p>
+        <p>Horario de Atención: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <p>Email: info@example.com</p>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </div>
+</body>
+</html>
+

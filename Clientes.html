@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Registrados</title>
+    <link rel="stylesheet" href="../CSS/clientesadmin.css">
+</head>
+<body>
+    <div class="contenido">
+        <h1>Bienvenido a la Web App de Distribución de Alimentos</h1>
+        <!-- Aquí puedes agregar contenido adicional de la página principal -->
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index_admin.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+             <li><a href="inventario.html">Inventario</a></li>
+            </ul>
+    </div>
+    <div class="container">
+        <h2>Clientes Registrados</h2>
+        <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+        <br><br>
+        <table id="clientesTable">
+            <thead>
+                <tr>
+                    <th><a href="#">ID</a></th>
+                    <th><a href="#">Nombre</a></th>
+                    <th><a href="#">Dirección</a></th>
+                    <th><a href="#">Correo Electrónico</a></th>
+                    <th><a href="#">Teléfono</a></th>
+                </tr>
+            </thead>
+            <tbody id="clientesBody">
+                <!-- Aquí se llenarán las filas de la tabla con los datos de los clientes -->
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Menú inferior -->
+    <div class="footer">
+        <p>Distribuidora de alimentos del Mañana S.A</p>
+        <p>Dirección: 123 Calle Principal, Ciudad de talca</p>
+        <p>Teléfono: +56995854231</p>
+        <p>Horario de Atención: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <p>Email: info@example.com</p>
+        <p>Todos los derechos reservados &copy; 2024</p>
+    </div>
+<script src="../JS/Clientes.js"></script>
+  
+</body>
+</html>
+
+

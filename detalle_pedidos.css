@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #00ffff;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.login-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: #00ffff;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #0096d2;
+}
+
+.pedidos-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.pedidos-titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.lista-pedidos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-pedidos li {
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+}
+#volver-productos {
+    display: block;
+    width: 150px; /* Ajusta según sea necesario */
+    margin: 0 auto;
+    margin-left: 50px; /* Espacio adicional hacia la izquierda */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#volver-productos:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    background-color: #00ffff;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
