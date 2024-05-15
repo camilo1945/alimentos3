@@ -4,38 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modo Administrador - Web App de Distribución de Alimentos</title>
-    
-    <link rel="stylesheet" href="login_admin.css">
-    
+    <link rel="stylesheet" href="CSS/login_admin.css">
 </head>
 
 <body>
     <div class="header">
-    <h1>Distribuidora de alimentos del Mañana S.A</h1>
+        <h1>Distribuidora de alimentos del Mañana S.A</h1>
         <h2>Alimentos 100% ecológicos</h2>
-        </div>
-        
-<div class="menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-    </ul>
-</div>
-
-<div class="container">
-    <div class="admin-login-box">
-        <h2>Inicio de Sesión - Administrador</h2>
-        <form id="loginForm">
-            <label for="username">Nombre de Usuario:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Iniciar Sesión</button>
-            <p id="loginMessage"></p> <!-- Aquí se mostrará un mensaje de error si el inicio de sesión falla -->
-        </form>
     </div>
-</div>
+        
+    <div class="menu">
+        <ul>
+            <li><a href="index_cliente.html">Inicio</a></li>
+        </ul>
+    </div>
 
-<!-- Menú inferior -->
+    <div class="container">
+        <div class="admin-login-box">
+            <h2>Inicio de Sesión - Administrador</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+                <p id="loginMessage"><?php echo htmlspecialchars($loginMessage); ?></p> <!-- Aquí se mostrará un mensaje de error si el inicio de sesión falla -->
+            </form>
+        </div>
+    </div>
+
     <div class="footer">
         <p>Distribuidora de alimentos del Mañana S.A</p>
         <p>Dirección: 123 Calle Principal, Ciudad de talca</p>
@@ -44,6 +41,5 @@
         <p>Email: info@example.com</p>
         <p>Todos los derechos reservados &copy; 2024</p>
     </div>
-
 </body>
 </html>
